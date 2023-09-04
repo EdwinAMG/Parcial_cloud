@@ -9,11 +9,21 @@
       "UnauthRoleName": "amplify-proyectoadidas-staging-182711-unauthRole",
       "StackName": "amplify-proyectoadidas-staging-182711",
       "StackId": "arn:aws:cloudformation:us-east-2:112547365470:stack/amplify-proyectoadidas-staging-182711/dc560130-3486-11ee-8095-020d4a96a6fd",
-      "AmplifyAppId": "dq8sj291nbt0t"
+      "AmplifyAppId": "dq8sj291nbt0t",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-proyectoadidas-staging-182711-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
         "proyectoadidas": {}
+      },
+      "function": {
+        "lambdaParcial": {
+          "deploymentBucketName": "amplify-proyectoadidas-staging-182711-deployment",
+          "s3Key": "amplify-builds/lambdaParcial-44375670727936767465-build.zip"
+        }
+      },
+      "api": {
+        "parcialAPI": {}
       }
     }
   }

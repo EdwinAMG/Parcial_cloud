@@ -1,4 +1,20 @@
 {
+  "api": {
+    "parcialAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "lambdaParcial"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "proyectoadidas": {
       "customAuth": false,
@@ -30,6 +46,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "lambdaParcial": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_lambdaParcial_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lambdaParcial"
+        }
+      ]
+    },
+    "AMPLIFY_function_lambdaParcial_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lambdaParcial"
+        }
+      ]
     }
   }
 }

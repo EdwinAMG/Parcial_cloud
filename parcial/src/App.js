@@ -2,7 +2,7 @@ import Tareas from "./componentes/Tareas";
 import "./App.css";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
-import { Amplify, Auth } from "aws-amplify";
+import { Amplify, Auth, API } from "aws-amplify";
 import aws_exports from "./aws-exports";
 Amplify.configure(aws_exports);
 
