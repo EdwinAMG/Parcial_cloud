@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-proyectoadidas-staging-182711-authRole",
+      "UnauthRoleArn": "arn:aws:iam::112547365470:role/amplify-proyectoadidas-staging-182711-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::112547365470:role/amplify-proyectoadidas-staging-182711-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-proyectoadidas-staging-182711-deployment",
+      "UnauthRoleName": "amplify-proyectoadidas-staging-182711-unauthRole",
+      "StackName": "amplify-proyectoadidas-staging-182711",
+      "StackId": "arn:aws:cloudformation:us-east-2:112547365470:stack/amplify-proyectoadidas-staging-182711/dc560130-3486-11ee-8095-020d4a96a6fd",
+      "AmplifyAppId": "dq8sj291nbt0t"
+    },
+    "categories": {
+      "auth": {
+        "proyectoadidas": {}
+      }
+    }
+  }
+}
