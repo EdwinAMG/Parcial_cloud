@@ -19,7 +19,7 @@
       "function": {
         "lambdaParcial": {
           "deploymentBucketName": "amplify-proyectoadidas-staging-182711-deployment",
-          "s3Key": "amplify-builds/lambdaParcial-44375670727936767465-build.zip"
+          "s3Key": "amplify-builds/lambdaParcial-3963596f4f41686b3744-build.zip"
         }
       },
       "api": {
