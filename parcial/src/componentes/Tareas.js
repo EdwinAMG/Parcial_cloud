@@ -7,13 +7,9 @@ function Tareas() {
     const user = await Auth.currentAuthenticatedUser();
     const token = user.signInUserSession.idToken.jwtToken;
     console.log({ token });
-
     const requestInfo = {
-      headers: {
-        Authorization: token,
-      },
+      headers: { Authorization: token },
     };
-
     const data = await API.get("parcialAPI", "/parcial", requestInfo);
     console.log(data);
   }

@@ -5,8 +5,7 @@ exports.handler = async (event) => {
   if (event.requestContext.authorizer) {
     console.log("claims: ", event.requestContext.authorizer.claims);
   }
-  console.log(`EVENT: ${JSON.stringify(event)}`);
-  return {
+  const response = {
     statusCode: 200,
     headers: {
       "Access-Control-Allow-Origin": "*",
@@ -14,4 +13,5 @@ exports.handler = async (event) => {
     },
     body: JSON.stringify("Hello from Lambda!"),
   };
+  return response;
 };
