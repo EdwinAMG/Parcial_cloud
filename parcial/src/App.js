@@ -14,7 +14,11 @@ function App() {
     const requestInfo = {
       headers: { Authorization: token },
     };
-    const data = await API.get("ParcialFinal", "/parcial", requestInfo);
+    const data = await API.get(
+      "ParcialFinal",
+      "/parcial/{proxy+}",
+      requestInfo
+    );
     console.log(data);
   }
   return (
