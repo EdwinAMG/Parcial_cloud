@@ -3,17 +3,6 @@ import "./Tareas.css";
 import { API, Auth } from "aws-amplify";
 
 function Tareas() {
-  async function callApi() {
-    const user = await Auth.currentAuthenticatedUser();
-    const token = user.signInUserSession.idToken.jwtToken;
-    console.log({ token });
-    const requestInfo = {
-      headers: { Authorization: token },
-    };
-    const data = await API.get("parcialAPI", "/parcial", requestInfo);
-    console.log(data);
-  }
-
   const [tasks, setTasks] = useState([]);
   const [taskText, setTaskText] = useState("");
 
@@ -27,10 +16,10 @@ function Tareas() {
       setTaskText("");
     }
   };
-  const handleAddTaskAndCallApi = () => {
+  /*const handleAddTaskAndCallApi = () => {
     addTask(); // Llama a la función addTask
     callApi(); // Llama a la función callApi
-  };
+  };*/
 
   const removeTask = (index) => {
     const newTasks = [...tasks];
@@ -56,7 +45,7 @@ function Tareas() {
         value={taskText}
         onChange={handleInputChange}
       />
-      <button onClick={handleAddTaskAndCallApi}>Agregar</button>
+      <button onClick={addTask}>Agregar</button>
     </div>
   );
 }
