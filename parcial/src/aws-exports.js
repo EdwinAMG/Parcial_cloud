@@ -3,53 +3,33 @@
 
 const awsmobile = {
     "aws_project_region": "us-east-2",
-    "aws_cognito_identity_pool_id": "us-east-2:15cd0864-7aca-425b-9598-a28eee3a16a5",
+    "aws_cloud_logic_custom": [
+        {
+            "name": "ParcialFinal",
+            "endpoint": "https://xr6ydw9dqi.execute-api.us-east-2.amazonaws.com/dev",
+            "region": "us-east-2"
+        }
+    ],
+    "aws_cognito_identity_pool_id": "us-east-2:6993161c-bc35-4a94-8828-70c027cab9a5",
     "aws_cognito_region": "us-east-2",
-    "aws_user_pools_id": "us-east-2_lAfNSYJrJ",
-    "aws_user_pools_web_client_id": "5nh3hpj6bflue3pf4pllmi9b7i",
-    "oauth": {
-        "domain": "16pa64j6a6kk-staging.auth.us-east-2.amazoncognito.com",
-        "scope": [
-            "phone",
-            "email",
-            "openid",
-            "profile",
-            "aws.cognito.signin.user.admin"
-        ],
-        "redirectSignIn": "https://d1avy1cpslihtq.cloudfront.net",
-        "redirectSignOut": "https://d1avy1cpslihtq.cloudfront.net/",
-        "responseType": "code"
-    },
-    "federationTarget": "COGNITO_USER_POOLS",
-    "aws_cognito_username_attributes": [
+    "aws_user_pools_id": "us-east-2_KxWwjLs8x",
+    "aws_user_pools_web_client_id": "4b01m21kj7s1t2fcs9ev596dde",
+    "oauth": {},
+    "aws_cognito_username_attributes": [],
+    "aws_cognito_social_providers": [],
+    "aws_cognito_signup_attributes": [
         "EMAIL"
     ],
-    "aws_cognito_social_providers": [
-        "FACEBOOK",
-        "GOOGLE"
-    ],
-    "aws_cognito_signup_attributes": [],
-    "aws_cognito_mfa_configuration": "OPTIONAL",
+    "aws_cognito_mfa_configuration": "OFF",
     "aws_cognito_mfa_types": [
-        "TOTP"
+        "SMS"
     ],
     "aws_cognito_password_protection_settings": {
         "passwordPolicyMinLength": 8,
-        "passwordPolicyCharacters": [
-            "REQUIRES_LOWERCASE",
-            "REQUIRES_NUMBERS",
-            "REQUIRES_UPPERCASE"
-        ]
+        "passwordPolicyCharacters": []
     },
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
-    ],
-    "aws_cloud_logic_custom": [
-        {
-            "name": "parcialAPI",
-            "endpoint": "https://5p7xrcu717.execute-api.us-east-2.amazonaws.com/staging",
-            "region": "us-east-2"
-        }
     ]
 };
 

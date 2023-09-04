@@ -11,7 +11,7 @@
     "env": {
       "Type": "String"
     },
-    "parcialAPI": {
+    "ParcialFinal": {
       "Type": "String"
     }
   },
@@ -52,7 +52,7 @@
                       },
                       ":",
                       {
-                        "Ref": "parcialAPI"
+                        "Ref": "ParcialFinal"
                       },
                       "/",
                       {
@@ -82,7 +82,7 @@
                       },
                       ":",
                       {
-                        "Ref": "parcialAPI"
+                        "Ref": "ParcialFinal"
                       },
                       "/",
                       {
@@ -135,7 +135,7 @@
                       },
                       ":",
                       {
-                        "Ref": "parcialAPI"
+                        "Ref": "ParcialFinal"
                       },
                       "/",
                       {
@@ -165,7 +165,7 @@
                       },
                       ":",
                       {
-                        "Ref": "parcialAPI"
+                        "Ref": "ParcialFinal"
                       },
                       "/",
                       {

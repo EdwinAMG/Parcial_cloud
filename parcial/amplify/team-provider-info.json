@@ -1,29 +1,29 @@
 {
-  "staging": {
+  "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-proyectoadidas-staging-182711-authRole",
-      "UnauthRoleArn": "arn:aws:iam::112547365470:role/amplify-proyectoadidas-staging-182711-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::112547365470:role/amplify-proyectoadidas-staging-182711-authRole",
+      "AuthRoleName": "amplify-parcial-dev-122418-authRole",
+      "UnauthRoleArn": "arn:aws:iam::112547365470:role/amplify-parcial-dev-122418-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::112547365470:role/amplify-parcial-dev-122418-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-proyectoadidas-staging-182711-deployment",
-      "UnauthRoleName": "amplify-proyectoadidas-staging-182711-unauthRole",
-      "StackName": "amplify-proyectoadidas-staging-182711",
-      "StackId": "arn:aws:cloudformation:us-east-2:112547365470:stack/amplify-proyectoadidas-staging-182711/dc560130-3486-11ee-8095-020d4a96a6fd",
-      "AmplifyAppId": "dq8sj291nbt0t",
-      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-proyectoadidas-staging-182711-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+      "DeploymentBucketName": "amplify-parcial-dev-122418-deployment",
+      "UnauthRoleName": "amplify-parcial-dev-122418-unauthRole",
+      "StackName": "amplify-parcial-dev-122418",
+      "StackId": "arn:aws:cloudformation:us-east-2:112547365470:stack/amplify-parcial-dev-122418/e160c200-4b47-11ee-953b-027dca2c1b3d",
+      "AmplifyAppId": "d22ghb1hjqv1vk",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-parcial-dev-122418-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
-        "proyectoadidas": {}
+        "parciala8fd2d6e": {}
       },
       "function": {
         "lambdaParcial": {
-          "deploymentBucketName": "amplify-proyectoadidas-staging-182711-deployment",
+          "deploymentBucketName": "amplify-parcial-dev-122418-deployment",
           "s3Key": "amplify-builds/lambdaParcial-3963596f4f41686b3744-build.zip"
         }
       },
       "api": {
-        "parcialAPI": {}
+        "ParcialFinal": {}
       }
     }
   }

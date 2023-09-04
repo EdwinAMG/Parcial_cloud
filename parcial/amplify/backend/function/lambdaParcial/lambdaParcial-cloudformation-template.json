@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "proyectoadidasLambdaRole3eaff1a6",
+            "parcialLambdaRole4604d8d2",
             {
               "Fn::Join": [
                 "",
                 [
-                  "proyectoadidasLambdaRole3eaff1a6",
+                  "parcialLambdaRole4604d8d2",
                   "-",
                   {
                     "Ref": "env"

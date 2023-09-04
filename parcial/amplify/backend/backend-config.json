@@ -1,6 +1,6 @@
 {
   "api": {
-    "parcialAPI": {
+    "ParcialFinal": {
       "dependsOn": [
         {
           "attributes": [
@@ -16,30 +16,23 @@
     }
   },
   "auth": {
-    "proyectoadidas": {
+    "parciala8fd2d6e": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
-        "mfaConfiguration": "OPTIONAL",
+        "mfaConfiguration": "OFF",
         "mfaTypes": [
-          "TOTP"
+          "SMS"
         ],
         "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [
-            "REQUIRES_LOWERCASE",
-            "REQUIRES_NUMBERS",
-            "REQUIRES_UPPERCASE"
-          ],
+          "passwordPolicyCharacters": [],
           "passwordPolicyMinLength": 8
         },
-        "signupAttributes": [],
-        "socialProviders": [
-          "FACEBOOK",
-          "GOOGLE"
-        ],
-        "usernameAttributes": [
+        "signupAttributes": [
           "EMAIL"
         ],
+        "socialProviders": [],
+        "usernameAttributes": [],
         "verificationMechanisms": [
           "EMAIL"
         ]
